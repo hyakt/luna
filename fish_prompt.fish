@@ -9,6 +9,23 @@ function fish_prompt
         set color "$color_error"
     end
 
+    if test ! -z "$SSH_CLIENT"
+        if test 0 -eq (id -u "$USER")
+            set color "$color_error"
+        end
+        echo -sn "$color"(host_info "usr@")"$color_normal"
+    end
+
+    if test 0 -eq (id -u "$USER")
+        echo -sn "$color_error\$"
+    end
+
+    if test "$PWD" = ~
+        set color (set_color green)
+    else if test "$PWD" = /
+        set color (set_color yellow)
+    end
+
     echo -sn "$color$cwd"
 
     if set branch_name (git_branch_name)
