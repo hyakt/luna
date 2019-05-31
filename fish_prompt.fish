@@ -21,7 +21,7 @@ function fish_prompt
     end
 
     if test "$PWD" = ~
-        set color (set_color green)
+        set color (set_color yellow)
     else if test "$PWD" = /
         set color (set_color yellow)
     end
