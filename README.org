@@ -2,12 +2,9 @@
 Simple fish shell prompt forked by sol.
 (I searched, but I didn't find sol..)
 
-** Install
-#+BEGIN_SRC fish
-fisher hyakt/luna
-#+END_SRC
+[[docs/demo.gif]]
 
-**  Features
+** Features
 *** Git
     - Clean
     - Dirty / Touched
@@ -19,3 +16,9 @@ fisher hyakt/luna
     - Unpulled and unpushed commits (diverged)
     - Detached HEAD
     - Branch name
+
+** Install
+#+BEGIN_SRC fish
+fisher hyakt/luna
+#+END_SRC
+
