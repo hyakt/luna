@@ -51,7 +51,7 @@ function fish_prompt
 
         set -l git_ahead (git_ahead "+" "-" "+-")
 
-        if test "$branch_name" = "master"
+        if test "$branch_name" = "master" -o "$branch_name" = "main"
             set branch_name
             if git_is_stashed
                 set branch_name "{}"
