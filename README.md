@@ -2,7 +2,7 @@ luna
 ===
 Simple fish shell prompt forked by sol.
 
-<docs/demo.gif>
+![demo](docs/demo.gif)
 
 Features
 ---
