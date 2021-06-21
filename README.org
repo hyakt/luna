@@ -1,6 +1,5 @@
 * luna
 Simple fish shell prompt forked by sol.
-(I searched, but I didn't find sol..)
 
 [[docs/demo.gif]]
 
@@ -19,6 +18,6 @@ Simple fish shell prompt forked by sol.
 
 ** Install
 #+BEGIN_SRC fish
-fisher hyakt/luna
+fisher install hyakt/luna
 #+END_SRC
 
