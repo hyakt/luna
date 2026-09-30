@@ -13,7 +13,7 @@ function fish_prompt
         if test 0 -eq (id -u "$USER")
             set color "$color_error"
         end
-        echo -sn "$color"(host_info "usr@")"$color_normal"
+        echo -sn "$color$USER@"(prompt_hostname)"$color_normal "
     end
 
     if test 0 -eq (id -u "$USER")
